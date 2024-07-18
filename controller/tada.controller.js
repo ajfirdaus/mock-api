@@ -50,9 +50,9 @@ const tadaController = {
             
 
             if (req.body.itemList[0].quantity < 5) {
-                res.status(200).json(successCreate);
+                res.status(200).send(JSON.stringify(successCreate));
             }else{
-                res.status(200).json(failedCreate);
+                res.status(200).send(JSON.stringify(failedCreate));
             }
 
         } catch (error) {
