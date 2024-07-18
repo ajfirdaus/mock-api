@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const app = express();
 
-const tadaController = require("./controller/tada.controller")
+const tadaController = require("./tada.controller")
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json());
